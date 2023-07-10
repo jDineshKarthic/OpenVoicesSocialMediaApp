@@ -1,0 +1,116 @@
+button.btn {
+  border-radius: 3.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1.6rem 1.6rem 1.6rem auto;
+}
+
+button.btn_editProfile {
+  border: thin solid var(--COLOR-BACKGROUND-DARK-100);
+  color: var(--COLOR-TEXT);
+}
+
+button.btn_editProfile:hover {
+  background-color: var(--COLOR-BACKGROUND-DARK-100);
+  border-color: var(--COLOR-BACKGROUND-DARK-100);
+}
+
+button.btn_follow {
+  background-color: var(--COLOR-FOLLOW-BACKGROUND);
+}
+
+button.btn_follow:hover {
+  background-color: var(--COLOR-FOLLOW-BACKGROUND-DARK-100);
+}
+
+button.btn_unfollow {
+  border: thin solid var(--COLOR-FOLLOW-BACKGROUND-DARK-100);
+  color: var(--COLOR-FOLLOW-BACKGROUND-DARK-100);
+}
+
+button:is(.btn_follow, .btn_unfollow).btn_disabled,
+button.btn_unfollow:hover {
+  background-color: var(--COLOR-FOLLOW-BACKGROUND);
+  border-color: var(--COLOR-FOLLOW-BACKGROUND);
+  color: var(--COLOR-SEARCH-BACKGROUND);
+}
+
+div.tabs {
+  margin-top: 1rem;
+}
+
+div.tabs button {
+  font-size: 1.5rem;
+  text-transform: none;
+}
+
+div.tabs > div > div {
+  justify-content: space-around;
+}
+
+div.tabs > div span {
+  border-top-left-radius: 3.5rem;
+  border-top-right-radius: 3.5rem;
+  height: 0.4rem;
+}
+
+h1,
+h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.accountCircle_icon {
+  fill: var(--COLOR-TEXT);
+  height: 100%;
+  margin: -0.1rem 0 0 -0.1rem;
+  width: 100%;
+}
+
+.accountCircle_icon > path {
+  transform: translate(-8%, -8%) scale(3.2);
+}
+
+.background_img {
+  background-color: var(--COLOR-SEARCH-INNER-SHADOW);
+  height: 18rem;
+  width: 100%;
+}
+
+.border_bottom {
+  border-bottom: thin solid var(--COLOR-BACKGROUND-DARK-100);
+}
+
+.profile_container {
+  color: var(--COLOR-TEXT);
+  display: flex;
+  flex-direction: column;
+}
+
+.profile_pic {
+  background-color: var(--COLOR-BACKGROUND);
+  border: thick solid var(--COLOR-BACKGROUND);
+  border-radius: 50%;
+  height: 14rem;
+  position: absolute;
+  transform: translateY(-50%);
+  width: 14rem;
+}
+
+.url_container {
+  align-items: center;
+  display: flex;
+}
+
+.url_container svg {
+  fill: var(--COLOR-TEXT);
+  height: 2rem;
+  margin-top: -0.5rem;
+  transform: rotate(-45deg);
+  width: 3rem;
+}
+
+.url_container svg > path {
+  transform: translateY(-10%) scale(0.5);
+}

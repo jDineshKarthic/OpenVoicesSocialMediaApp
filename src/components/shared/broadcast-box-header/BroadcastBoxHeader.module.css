@@ -1,0 +1,36 @@
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  align-items: baseline;
+  display: flex;
+}
+
+.name a {
+  color: var(--COLOR-TEXT);
+  text-decoration: none;
+}
+
+.name a:hover {
+  text-decoration: underline;
+}
+
+.name p {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.name :is(a, h2) {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.name :is(a, h2, p) {
+  max-width: 20rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

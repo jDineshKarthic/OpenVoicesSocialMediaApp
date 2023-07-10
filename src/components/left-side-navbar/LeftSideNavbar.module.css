@@ -1,0 +1,84 @@
+button.accountCircle_btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem;
+  max-width: 25rem;
+  padding: 0 1.5rem 0 1.2rem;
+  width: 25rem;
+}
+
+button.accountCircle_btn .accountCircle_btnText > :is(span, p) {
+  font-size: 1.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+button.broadcast_btn {
+  /* box-shadow: 0.1rem 0.1rem 0.2rem var(--COLOR-TEXT); */
+  font-size: 2.2rem;
+  margin-top: 3rem;
+  padding: 0.5rem 1.2rem;
+  width: 18rem;
+}
+
+button.broadcast_btn:hover {
+  box-shadow: 0.1rem 0.1rem 0.2rem var(--COLOR-TEXT);
+}
+
+.aside {
+  display: flex;
+  justify-content: space-between;
+  width: 27rem;
+}
+
+.ellipsisIcon {
+  height: 2rem;
+  margin-left: 1.5rem;
+  width: 3rem;
+}
+
+.ellipsisIcon > path {
+  transform: translate(-10%, -10%) scale(0.5);
+}
+
+.link {
+  border-radius: 3.5rem;
+  margin-bottom: 0.5rem;
+  max-width: max-content;
+  transition: background-color 0.3s;
+}
+
+.link:hover {
+  background-color: var(--COLOR-BACKGROUND-DARK-100);
+}
+
+.listText > :is(span, p) {
+  color: var(--COLOR-TEXT);
+  font-size: 2.2rem;
+  padding-left: 1rem;
+}
+
+.listText_active > span {
+  font-weight: 600;
+}
+
+.logoImg {
+  height: 5.4rem;
+  width: 5.4rem;
+}
+
+.navIcon {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.navIcon > path {
+  transform: translate(-10%, -10%) scale(0.8);
+}
+
+.ellipsisIcon,
+.navIcon {
+  fill: var(--COLOR-TEXT);
+}

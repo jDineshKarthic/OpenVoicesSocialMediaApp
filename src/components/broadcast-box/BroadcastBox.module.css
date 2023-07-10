@@ -1,0 +1,33 @@
+button.btnMenu_icon svg path {
+  transform: translate(-0.2rem, -12%) scale(0.5);
+}
+
+.avatarBox {
+  border-bottom: thin solid var(--COLOR-BACKGROUND-DARK-100);
+  cursor: pointer;
+  padding: 1rem 2rem;
+}
+
+.avatarBox:hover {
+  background-color: var(--COLOR-BACKGROUND-DARK-50);
+}
+
+.broadcast_message {
+  line-height: 1.5em;
+  margin: 1rem 0;
+  overflow-wrap: break-word;
+  white-space: pre-line;
+}
+
+.container {
+  color: var(--COLOR-TEXT);
+}
+
+.header button.btnMenu_icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+.header button.btnMenu_icon:hover {
+  background-color: var(--COLOR-BACKGROUND-DARK-150);
+}

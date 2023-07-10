@@ -1,0 +1,4 @@
+button.btn.btn_disabled {
+  background-color: var(--COLOR-PRIMARY);
+  color: var(--COLOR-SEARCH-BACKGROUND);
+}

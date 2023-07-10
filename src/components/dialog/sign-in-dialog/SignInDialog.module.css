@@ -1,0 +1,22 @@
+div.action_logIn {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem 2rem;
+}
+
+div.action_logIn button {
+  font-size: 1.4rem;
+}
+
+div.action_logIn button:not(:first-of-type) {
+  margin-left: 0;
+}
+
+div.dialogContent {
+  color: var(--COLOR-TEXT);
+  padding: 0 2rem;
+}
+
+.dialogContainer > div:nth-child(3) > div {
+  width: 35rem;
+}

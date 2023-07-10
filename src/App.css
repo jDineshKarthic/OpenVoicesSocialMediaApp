@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
+:root {
+  --COLOR-BACKGROUND: #fffcef;
+  --COLOR-BACKGROUND-DARK-50: #e3e9f2;
+  --COLOR-BACKGROUND-DARK-100: #d6dce4;
+  --COLOR-BACKGROUND-DARK-150: #c3c8cf;
+  --COLOR-BACKGROUND-OPACITY-70: rgb(239 246 255 / 70%);
+
+  --COLOR-ERROR: #ef4444;
+
+  --COLOR-FOLLOW-BACKGROUND: #000000;
+  --COLOR-FOLLOW-BACKGROUND-DARK-100: #000000;
+
+  --COLOR-LOGOUT-DIALOG-TICK: #84cc16;
+
+  --COLOR-PRIMARY: #000000;
+  --COLOR-PRIMARY-DARK-100: #000000;
+
+  --COLOR-TEXT: #475569;
+  --COLOR-TEXT-LIGHT-50: #667890;
+
+  --COLOR-SEARCH-BACKGROUND: white;
+  --COLOR-SEARCH-INNER-SHADOW: rgba(0, 0, 0, 0.25);
+
+  --SIZE-CONTAINER-LG: 1300px;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--COLOR-BACKGROUND);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  overflow-y: scroll;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+div.container-lg {
+  margin: auto;
+  max-width: var(--SIZE-CONTAINER-LG);
+  padding-right: 1rem;
+}
+
+.aside {
+  max-height: 100vh;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+}
+
+.main-container {
+  border: solid var(--COLOR-BACKGROUND-DARK-100);
+  border-width: 0 thin 0 thin;
+}
+
+/* override */
+
+::-ms-reveal {
+  display: none !important;
+}
